@@ -18,3 +18,17 @@ makeup();
 // function directions() {
 //$.get('https://maps.googleapis.com/maps/api/directions/json?origin=75+9th+Ave+New+York,+NY&destination=MetLife+Stadium+1+MetLife+Stadium+Dr+East+Rutherford,+NJ+07073&key=')
 // }
+
+$.get('')
+
+/*
+BUILDING APU URL
+var api = 'https://twitter.com/search?q=%23'
+var key = T27Py93Fv9389kdGnBb3b6yfgl;
+var buttonContent =
+var url = api + buttonContent;
+
+
+makeup hashtag url
+https://twitter.com/search?q=%23makeup&src=typd
+*/

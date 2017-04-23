@@ -15,11 +15,11 @@ function makeup() {
 makeup();
 
 
+
 // function directions() {
 //$.get('https://maps.googleapis.com/maps/api/directions/json?origin=75+9th+Ave+New+York,+NY&destination=MetLife+Stadium+1+MetLife+Stadium+Dr+East+Rutherford,+NJ+07073&key=')
 // }
 
-$.get('')
 
 /*
 BUILDING APU URL

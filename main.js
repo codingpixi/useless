@@ -1,20 +1,28 @@
-// let mouseClick = document.querySelector("body");
-// mouseClick.addEventListener("click", logEvent);
-//
-// function logEvent() {
-//   console.log('event'); //event was in parenthasis without signle quotes
-// }
-//
+let mouseClick = document.querySelector("body");
+mouseClick.addEventListener("click", logEvent);
+
+function logEvent() {
+  console.log('event'); //event was in parenthasis without signle quotes
+}
+
 function makeup() {
 
   $.get('http://makeup-api.herokuapp.com/api/v1/products.json', function(data) {
     console.log(data);
     // console.log(data[0].brand);
+    $('.brand').text(data.title)
   });
 };
 makeup();
 
 
+function mascara() {
+
+  $.get('http://makeup-api.herokuapp.com/api/v1/products.json?product_type=lip_liner', function(mascaraData) {
+    console.log(mascaraData[0].brand);
+  });
+};
+mascara();
 
 // function directions() {
 //$.get('https://maps.googleapis.com/maps/api/directions/json?origin=75+9th+Ave+New+York,+NY&destination=MetLife+Stadium+1+MetLife+Stadium+Dr+East+Rutherford,+NJ+07073&key=')

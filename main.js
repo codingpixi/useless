@@ -20,9 +20,18 @@ function mascara() {
 
   $.get('http://makeup-api.herokuapp.com/api/v1/products.json?product_type=lip_liner', function(mascaraData) {
     console.log(mascaraData[0].brand);
+    let brand = mascaraData.["0"].brand;
   });
 };
 mascara();
+
+function product() {
+
+  $.get('http://makeup-api.herokuapp.com/api/v1/products.json', function(produceData) {
+    console.log(product);
+  });
+};
+product();
 
 // function directions() {
 //$.get('https://maps.googleapis.com/maps/api/directions/json?origin=75+9th+Ave+New+York,+NY&destination=MetLife+Stadium+1+MetLife+Stadium+Dr+East+Rutherford,+NJ+07073&key=')
